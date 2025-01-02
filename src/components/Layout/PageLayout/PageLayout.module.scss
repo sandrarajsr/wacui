@@ -1,0 +1,7 @@
+@import '../../../styles/util';
+
+.page_layout{
+    min-height: calc(100vh - var(--header-height));
+    border-left: 1px solid var(--border-color);
+    border-right: 1px solid var(--border-color);
+}

@@ -1,0 +1,28 @@
+@import '../../../styles/util';
+
+.footer {
+    background-color: var(--white);
+    width: 100%;
+
+    .footer_wrap {
+        padding: 50px 32px;
+        border-right: 1px solid var(--border-color);
+        border-left: 1px solid var(--border-color);
+    }
+
+    .footer_text {
+        font-size: 16px;
+        color: var(--text-color);
+
+        .anchor {  
+            font-weight: $medium;
+            text-underline-offset: 4px;
+            color: var(--text-color);
+            transition: all 0.3s ease-in-out;
+
+            &:hover{
+                color: var(--primary-color);
+            }
+        }
+    }
+}

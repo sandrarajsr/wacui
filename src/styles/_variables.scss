@@ -1,0 +1,97 @@
+$white: #fff;
+$black: #000;
+$text-color: #71717a;
+$body-background-color: $white;
+$header-border: #E2E6F5;
+
+// variables for theme colors (assign null to unwanted theme colors)
+
+$primary-color: $black;
+$secondary-color: #F4F4F5;
+$secondary-color-dark: #dadadb;
+$home-bg: #000;
+$text-black: #0B032C;
+
+$link: #09090bcc;
+$border-color: #e4e4e7;
+$search-bar: #f4f4f580;
+$border-color-dark: #27272a;
+$btn-color:#a1a1aa;
+$search-bg-dark:#27272a80;
+
+// // Theme colors
+$primary: $primary-color !default;
+$secondary: $secondary-color !default;
+
+
+
+// Mode colors
+$body-bg-dark: $black;
+$body-color-dark: $white;
+
+
+// Font
+
+$semi-regular: 300;
+$regular : 400;
+$medium : 500;
+$semi-bold : 600;
+$bold : 700;
+$ex-bold: 800;
+
+$font-weight: (
+    regular : 400,
+    medium : 500,
+    semi-bold : 600,
+    bold : 700
+);
+
+$base-size: 18; // For rem calculations purposes
+$primary-font: 'Geist Sans', sans-serif;
+// $secondary-font: 'Libre Franklin', sans-serif;
+// $tertiary-font: 'Playfair Display', serif;
+// $bai-jamjuree-font: 'Bai Jamjuree', sans-serif;
+
+
+// // Grid breakpoints
+$grid-breakpoints: (
+    xs: 0,
+    sm: 576px,
+    md: 768px,
+    lg: 992px,
+    xl: 1200px,
+    xxl: 1400px,
+);
+
+// // Container max-width for every breakpoint
+$container-max-widths: (
+    sm: 90%,
+    md: 98%,
+    lg: 98%,
+    xl: 98%,
+    xxl: 1500px,
+);
+
+
+
+// Light Mode
+
+
+:root {
+    --white:#{$white};
+    --light:#{$white};
+    --black:#{$black};
+    --primary-color: var(--black);
+    --text-black:#{$text-black};
+    --header-white: #ffffff99;
+    --header-dark: #f6b0b099;
+    --border-color:#{$border-color};
+    --search-bar:#{$search-bar};
+    --secondary:#{$secondary-color};
+    --secondary-color-dark:#{$secondary-color-dark};
+    --text-color:#{$text-color};
+    --btn-color:#{$btn-color};
+    --search-bg-dark:#{$search-bg-dark};
+    --link:#{$link};
+}
+

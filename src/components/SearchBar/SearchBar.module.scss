@@ -1,0 +1,99 @@
+@import '../../styles/util';
+
+.search {
+
+    :global {
+        .form-control {
+            cursor: pointer;
+            background-color: var(--white);
+            --bs-border-radius: 0;
+            color: var(--text-color);
+            line-height: 1;
+            padding: 20px;
+            border-top: 0;
+            border-left: 0;
+            border-right: 0;
+
+            &::placeholder{
+                font-size: 14px;
+            }
+
+            &:focus {
+                box-shadow: none;
+                border-color: transparent;
+                background-color: var(--secondary);
+            }
+
+            &:hover {
+                border-color: transparent;
+                background-color: var(--secondary);
+            }
+        }
+    }
+    .form_group {
+        position: relative;
+        font-family: $primary-font;
+
+        .icon {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            right: 20px;
+
+            svg {
+                margin-top: -3px;
+            }
+        }
+
+        
+    }
+    .suggestions {
+        background: white;
+        width: 100%;
+        max-height: 350px;
+        overflow-y: auto;
+        z-index: 1000;
+        list-style: none;
+        margin: 0;
+        padding: 10px;
+
+        &::-webkit-scrollbar{
+            width: 5px;
+        }
+        &::-webkit-scrollbar-track{
+            background-color: transparent;
+        }
+        &::-webkit-scrollbar-thumb{
+            background-color: var(--secondary);
+        }
+
+        li{
+            padding: 12px;
+            font-size: 14px;
+            font-weight: $medium;
+            cursor: pointer;
+            transition: all 0.3s ease-in-out;
+
+            &:hover{
+                background-color: $secondary-color;
+            }
+
+            svg{
+                margin-right: 8px;
+                margin-top: -4px;
+            }
+        }
+    }
+
+    .no_result{
+        min-height: 250px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .no_text{
+            font-size: 16px;
+            font-weight: $medium;
+        }
+    }
+}
